@@ -1,0 +1,627 @@
+fileFormatVersion: 2
+guid: 5cf7b51ebc99d1f43adda806c2bdd033
+timeCreated: 1439992845
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Gold_Cards_0
+    21300002: Gold_Cards_1
+    21300004: Gold_Cards_2
+    21300006: Gold_Cards_3
+    21300008: Gold_Cards_4
+    21300010: Gold_Cards_5
+    21300012: Gold_Cards_6
+    21300014: Gold_Cards_7
+    21300016: Gold_Cards_8
+    21300018: Gold_Cards_9
+    21300020: Gold_Cards_10
+    21300022: Gold_Cards_11
+    21300024: Gold_Cards_12
+    21300026: Gold_Cards_13
+    21300028: Gold_Cards_14
+    21300030: Gold_Cards_15
+    21300032: Gold_Cards_16
+    21300034: Gold_Cards_17
+    21300036: Gold_Cards_18
+    21300038: Gold_Cards_19
+    21300040: Gold_Cards_20
+    21300042: Gold_Cards_21
+    21300044: Gold_Cards_22
+    21300046: Gold_Cards_23
+    21300048: Gold_Cards_24
+    21300050: Gold_Cards_25
+    21300052: Gold_Cards_26
+    21300054: Gold_Cards_27
+    21300056: Gold_Cards_28
+    21300058: Gold_Cards_29
+    21300060: Gold_Cards_30
+    21300062: Gold_Cards_31
+    21300064: Gold_Cards_32
+    21300066: Gold_Cards_33
+    21300068: Gold_Cards_34
+    21300070: Gold_Cards_35
+    21300072: Gold_Cards_36
+    21300074: Gold_Cards_37
+    21300076: Gold_Cards_38
+    21300078: Gold_Cards_39
+    21300080: Gold_Cards_40
+    21300082: Gold_Cards_41
+    21300084: Gold_Cards_42
+    21300086: Gold_Cards_43
+    21300088: Gold_Cards_44
+    21300090: Gold_Cards_45
+    21300092: Gold_Cards_46
+    21300094: Gold_Cards_47
+    21300096: Gold_Cards_48
+    21300098: Gold_Cards_49
+    21300100: Gold_Cards_50
+    21300102: Gold_Cards_51
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 140
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Gold_Cards_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_2
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_3
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_4
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_5
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_6
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_7
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_8
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_9
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_10
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_11
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_12
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 402
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_14
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_15
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_16
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_17
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_18
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_19
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_20
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_21
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_22
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_23
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_24
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_25
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 268
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_27
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_28
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_29
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_30
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_31
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_32
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_33
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_34
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_35
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_36
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_37
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_38
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 134
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_40
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_41
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_42
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_43
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_44
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_45
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_46
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_47
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_48
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_49
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_50
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gold_Cards_51
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 0
+        width: 94
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
