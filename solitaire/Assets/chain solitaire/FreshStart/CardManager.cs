@@ -15,6 +15,7 @@ public class CardManager : MonoBehaviour {
     public AddOrSub gameData;
     public Text goalText;   //display the goal
     public int goal;    //number to get
+    public int totalRounds = 5;
 	
 	void Start () {
         for (int i = 0; i < 4; i++) {
@@ -53,7 +54,7 @@ public class CardManager : MonoBehaviour {
 	}
 
     public void Draw() {
-        if (round < 5 && gameData.alreadyValued) {
+        if (round < totalRounds && gameData.alreadyValued) {
             //Debug.Log("mouse down");
             myCard = deck[0];
             deck.RemoveAt(0);
@@ -66,7 +67,7 @@ public class CardManager : MonoBehaviour {
             gameData.alreadyValued = false;
             round++;
         }
-        else if (round < 5 && !gameData.alreadyValued) {
+        else if (round < totalRounds && !gameData.alreadyValued) {
             //just don't end the game ok
         }
         else {

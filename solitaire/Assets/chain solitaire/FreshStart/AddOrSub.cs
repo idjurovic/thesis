@@ -9,60 +9,98 @@ public class AddOrSub : MonoBehaviour {
     public CardManager theDeck;
     public int counter = 0;
     public bool alreadyValued = false;  //did you already add or subtract this card? no bm pls
+    public bool showRoundNumber = false;
+    public int extraRoundNumber = 0;
 
-	public void Add () {
+    private void Start() {
+        this.GetComponent<Text>().text = this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + "\n" + counter;
+    }
 
-        //Debug.Log(Deck.current_card_rank);
-        //Debug.Log(counter);
-
-        //counter += Deck.current_card_rank + 1;
-        //this.GetComponent<Text>().text = "" + counter;
-        //Deck.RunNewCard();
-
-        //Debug.Log(theDeck.myCard.rank);
-
+    public void Add () {
         if (!alreadyValued) {
             counter += theDeck.myCard.rank;
-            this.GetComponent<Text>().text = "" + counter;
+            if (theDeck.myCard.suit.ToString() == "diamonds") {
+                showRoundNumber = true;
+                extraRoundNumber++;
+                theDeck.totalRounds++;
+            }
+            if (showRoundNumber) {
+                this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + " (+" + extraRoundNumber + " extra!)" + "\n" + counter;
+            }
+            else {
+                this.GetComponent<Text>().text = "Round " + theDeck.round + "\n" + counter;
+            }
+            //this.GetComponent<Text>().text = "Round " + theDeck.totalRounds + "\n" + counter;
             alreadyValued = true;
+            Draw();
         }
     }
 	
 	public void Subtract () {
-
-        //Debug.Log(Deck.current_card_rank);
-        //Debug.Log(counter);
-
-        //counter -= Deck.current_card_rank + 1;
-        //this.GetComponent<Text>().text = "" + counter;
-        //Deck.RunNewCard();
-
-        //Debug.Log(theDeck.myCard.rank);
-
         if (!alreadyValued) {
             counter -= theDeck.myCard.rank;
-            this.GetComponent<Text>().text = "" + counter;
+            if (theDeck.myCard.suit.ToString() == "diamonds") {
+                showRoundNumber = true;
+                extraRoundNumber++;
+                theDeck.totalRounds++;
+            }
+            if (showRoundNumber) {
+                this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + " (+" + extraRoundNumber + " extra!)" + "\n" + counter;
+            }
+            else {
+                this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + "\n" + counter;
+            }
+            //this.GetComponent<Text>().text = "Round " + theDeck.totalRounds + "\n" + counter;
             alreadyValued = true;
+            Draw();
         }
     }
 
     public void AddSecond () {
         if (!alreadyValued) {
             counter += theDeck.secondCard.rank;
-            this.GetComponent<Text>().text = "" + counter;
+            if (theDeck.myCard.suit.ToString() == "diamonds") {
+                showRoundNumber = true;
+                extraRoundNumber++;
+                theDeck.totalRounds++;
+            }
+            if (showRoundNumber) {
+                this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + " (+" + extraRoundNumber + " extra!)" + "\n" + counter;
+            }
+            else {
+                this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + "\n" + counter;
+            }
+            //this.GetComponent<Text>().text = "Round " + theDeck.totalRounds + "\n" + counter;
             alreadyValued = true;
+            Draw();
         }
     }
 
     public void SubtractSecond() {
         if (!alreadyValued) {
             counter -= theDeck.secondCard.rank;
-            this.GetComponent<Text>().text = "" + counter;
+            if (theDeck.myCard.suit.ToString() == "diamonds") {
+                showRoundNumber = true;
+                extraRoundNumber++;
+                theDeck.totalRounds++;
+            }
+            if (showRoundNumber) {
+                this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + " (+" + extraRoundNumber + " extra!)" + "\n" + counter;
+            }
+            else {
+                this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + "\n" + counter;
+            }
+            //this.GetComponent<Text>().text = "Round " + theDeck.totalRounds + "\n" + counter;
             alreadyValued = true;
+            Draw();
         }
     }
 
     public void Draw () {
         theDeck.Draw();
+    }
+
+    public void Replay() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
