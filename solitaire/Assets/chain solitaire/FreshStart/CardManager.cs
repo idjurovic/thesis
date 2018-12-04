@@ -25,7 +25,7 @@ public class CardManager : MonoBehaviour {
             }
         }
 
-        goal = (int)Random.Range(3, 24);
+        goal = (int)Random.Range(3, 21);
         goalText.text = "Goal: " + goal;
         round = 1;
         totalRounds = 5;
@@ -52,7 +52,7 @@ public class CardManager : MonoBehaviour {
     }
 	
 	void Update () {
-		
+        //Pressed();
 	}
 
     public void Draw() {
@@ -97,6 +97,19 @@ public class CardManager : MonoBehaviour {
             deck[i] = tmpCard;
         }
     }
+
+    //void Pressed() {
+    //    if (myCard.isPressed) {
+    //        Vector2 MousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+    //        Vector2 objPosition = Camera.main.ScreenToWorldPoint(MousePosition);
+    //        drawnCard.transform.position = objPosition;
+    //    }
+    //    else if (secondCard.isPressed) {
+    //        Vector2 MousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+    //        Vector2 objPosition = Camera.main.ScreenToWorldPoint(MousePosition);
+    //        drawnSecondCard.transform.position = objPosition;
+    //    }
+    //}
 }
 [System.Serializable]
 public class Card {
@@ -109,10 +122,12 @@ public class Card {
     }
     public Suit suit;
     public int rank;
+    //public bool isPressed;
 
     public Card (Suit _suit, int _rank) {
         suit = _suit;
         rank = _rank;
+        //isPressed = false;
     }
 
 
