@@ -11,7 +11,7 @@ public class CardManager : MonoBehaviour {
     public GameObject drawnSecondCard;
     public Card myCard;
     public Card secondCard;
-    public int round;   //how many rounds of cards
+    public int round = 1;   //how many rounds of cards
     public AddOrSub gameData;
     public Text goalText;   //display the goal
     public int goal;    //number to get
@@ -27,6 +27,8 @@ public class CardManager : MonoBehaviour {
 
         goal = (int)Random.Range(3, 24);
         goalText.text = "Goal: " + goal;
+        round = 1;
+        totalRounds = 5;
 
         ShuffleDeck();
         
@@ -54,6 +56,7 @@ public class CardManager : MonoBehaviour {
 	}
 
     public void Draw() {
+        round++;
         if (round < totalRounds && gameData.alreadyValued) {
             //Debug.Log("mouse down");
             myCard = deck[0];
@@ -65,7 +68,6 @@ public class CardManager : MonoBehaviour {
             drawnSecondCard.GetComponent<SpriteRenderer>().sprite = GetCardSprite(secondCard.suit, secondCard.rank);
 
             gameData.alreadyValued = false;
-            round++;
         }
         else if (round < totalRounds && !gameData.alreadyValued) {
             //just don't end the game ok

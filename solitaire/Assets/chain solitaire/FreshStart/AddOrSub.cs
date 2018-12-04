@@ -18,6 +18,7 @@ public class AddOrSub : MonoBehaviour {
 
     public void Add () {
         if (!alreadyValued) {
+            Debug.Log("" + theDeck.myCard.rank + " of " + theDeck.myCard.suit);
             counter += theDeck.myCard.rank;
             if (theDeck.myCard.suit.ToString() == "diamonds") {
                 showRoundNumber = true;

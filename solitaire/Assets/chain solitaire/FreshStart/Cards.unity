@@ -1772,7 +1772,7 @@ MonoBehaviour:
   secondCard:
     suit: 0
     rank: 0
-  round: 0
+  round: 1
   gameData: {fileID: 1134265035}
   goalText: {fileID: 858814763}
   goal: 0
