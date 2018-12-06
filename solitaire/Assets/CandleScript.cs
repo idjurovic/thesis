@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CandleScript : MonoBehaviour {
 
@@ -24,7 +25,9 @@ public class CandleScript : MonoBehaviour {
         {
             lightButton.SetActive(true);
             screamSound();
-
+            if (Input.GetKey("space")) {
+                SceneManager.LoadScene(1);
+            }
 
 
         } else { lightButton.SetActive(false); }
