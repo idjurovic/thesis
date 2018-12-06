@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 1429233963}
   - component: {fileID: 1429233962}
   m_Layer: 5
-  m_Name: Goal (2)
+  m_Name: Minus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2304,7 +2304,7 @@ GameObject:
   - component: {fileID: 2110556941}
   - component: {fileID: 2110556940}
   m_Layer: 5
-  m_Name: Goal (1)
+  m_Name: Plus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
