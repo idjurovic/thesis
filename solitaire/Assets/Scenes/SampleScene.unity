@@ -906,6 +906,21 @@ Prefab:
       propertyPath: m_Name
       value: candle2
       objectReference: {fileID: 0}
+    - target: {fileID: 114566251241105796, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: flamePrefab
+      value: 
+      objectReference: {fileID: 1505830202}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.8710299
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 4.3001947
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abe6319fafe37aa4db7c0dbdfedaae9e, type: 2}
   m_IsPrefabAsset: 0
@@ -914,6 +929,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4347693522293046, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
     type: 2}
   m_PrefabInternal: {fileID: 256110340}
+--- !u!1 &257198980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1595877127675928, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2002928994}
 --- !u!1 &269687961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,6 +1774,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9952841, y: 0.83230877}
   m_EdgeRadius: 0
+--- !u!1 &621373499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1595877127675928, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+    type: 2}
+  m_PrefabInternal: {fileID: 976609447}
 --- !u!1 &627062911
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,6 +2642,31 @@ Prefab:
       propertyPath: m_Name
       value: candle5
       objectReference: {fileID: 0}
+    - target: {fileID: 114566251241105796, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: flamePrefab
+      value: 
+      objectReference: {fileID: 621373499}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.6773087
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 4.607148
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -1.0001872
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 4.2203746
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abe6319fafe37aa4db7c0dbdfedaae9e, type: 2}
   m_IsPrefabAsset: 0
@@ -2951,6 +3001,31 @@ Prefab:
     - target: {fileID: 1119068252857038, guid: abe6319fafe37aa4db7c0dbdfedaae9e, type: 2}
       propertyPath: m_Name
       value: candle4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114566251241105796, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: flamePrefab
+      value: 
+      objectReference: {fileID: 1939151985}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.15573621
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2.2274013
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -1.7530403
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 7.39608
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abe6319fafe37aa4db7c0dbdfedaae9e, type: 2}
@@ -4079,6 +4154,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1505830202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1595877127675928, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+    type: 2}
+  m_PrefabInternal: {fileID: 256110340}
 --- !u!4 &1525783988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4148739222807252, guid: 90e099a4ec68a034cb980d3c91ddf6d4,
@@ -4737,6 +4817,31 @@ Prefab:
       propertyPath: m_Name
       value: candle3
       objectReference: {fileID: 0}
+    - target: {fileID: 114566251241105796, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: flamePrefab
+      value: 
+      objectReference: {fileID: 1919060057}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.43825817
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 4.7665157
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -1.0001876
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 4.220376
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abe6319fafe37aa4db7c0dbdfedaae9e, type: 2}
   m_IsPrefabAsset: 0
@@ -4935,6 +5040,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0123a09a79c36d4c9e86c9af5b50851, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1919060057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1595877127675928, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1856108853}
 --- !u!1 &1932143980
 GameObject:
   m_ObjectHideFlags: 0
@@ -5010,6 +5120,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1939151985 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1595877127675928, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1218582722}
 --- !u!1001 &2002928994
 Prefab:
   m_ObjectHideFlags: 0
@@ -5052,6 +5167,31 @@ Prefab:
     - target: {fileID: 1119068252857038, guid: abe6319fafe37aa4db7c0dbdfedaae9e, type: 2}
       propertyPath: m_Name
       value: candle6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114566251241105796, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: flamePrefab
+      value: 
+      objectReference: {fileID: 257198980}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.47810125
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 4.8462048
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.8333454
+      objectReference: {fileID: 0}
+    - target: {fileID: 61564906614345702, guid: abe6319fafe37aa4db7c0dbdfedaae9e,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 3.7420673
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abe6319fafe37aa4db7c0dbdfedaae9e, type: 2}
