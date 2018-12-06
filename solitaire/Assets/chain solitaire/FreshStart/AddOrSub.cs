@@ -12,7 +12,9 @@ public class AddOrSub : MonoBehaviour {
     public int counter = 0;
     public bool alreadyValued = false;  //did you already add or subtract this card? no bm pls
     public bool predictUsed = false;
+    public bool skipUsed = false;
     public GameObject predictButton;
+    public GameObject skipButton;
     //public bool showRoundNumber = false;
     //public int extraRoundNumber = 0;
 
@@ -20,6 +22,7 @@ public class AddOrSub : MonoBehaviour {
         this.GetComponent<Text>().text = "Round " + (theDeck.round + 1) + " of " + (theDeck.totalRounds - 1) + "\n" + counter;
         predictText.text = "";
         predictButton.SetActive(true);
+        skipButton.SetActive(true);
     }
 
     public void Add () {
@@ -110,6 +113,9 @@ public class AddOrSub : MonoBehaviour {
             predictText.text = "";
             predictButton.SetActive(false);
         }
+        if (skipUsed) {
+            skipButton.SetActive(false);
+        }
     }
 
     public void Replay() {
@@ -122,5 +128,14 @@ public class AddOrSub : MonoBehaviour {
                 + "the " + theDeck.deck[1].rank + " of " + theDeck.deck[1].suit + ".";
         }
         predictUsed = true;
+    }
+
+    public void Skip() {
+        if (!skipUsed) {
+            skipUsed = true;
+            alreadyValued = true;
+            theDeck.round--;
+            Draw();
+        }
     }
 }
