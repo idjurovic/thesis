@@ -13,7 +13,7 @@ public class AddOrSub : MonoBehaviour {
     //public int extraRoundNumber = 0;
 
     private void Start() {
-        this.GetComponent<Text>().text = this.GetComponent<Text>().text = "Round " + (theDeck.round + 1) + " of " + theDeck.totalRounds + "\n" + counter;
+        this.GetComponent<Text>().text = "Round " + (theDeck.round + 1) + " of " + (theDeck.totalRounds - 1) + "\n" + counter;
     }
 
     public void Add () {
@@ -29,7 +29,7 @@ public class AddOrSub : MonoBehaviour {
             //    //this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + " (+" + extraRoundNumber + " extra!)" + "\n" + counter;
             //}
             //else {
-                this.GetComponent<Text>().text = "Round " + (theDeck.round + 1) + " of " + theDeck.totalRounds + "\n" + counter;
+            this.GetComponent<Text>().text = "Round " + (theDeck.round + 1) + " of " + (theDeck.totalRounds - 1) + "\n" + counter;
             //}
             //this.GetComponent<Text>().text = "Round " + theDeck.totalRounds + "\n" + counter;
             alreadyValued = true;
@@ -49,7 +49,7 @@ public class AddOrSub : MonoBehaviour {
             //    //this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + " (+" + extraRoundNumber + " extra!)" + "\n" + counter;
             //}
             //else {
-                this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + "\n" + counter;
+            this.GetComponent<Text>().text = "Round " + (theDeck.round + 1) + " of " + (theDeck.totalRounds - 1) + "\n" + counter;
             //}
             //this.GetComponent<Text>().text = "Round " + theDeck.totalRounds + "\n" + counter;
             alreadyValued = true;
@@ -69,7 +69,7 @@ public class AddOrSub : MonoBehaviour {
             //    //this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + " (+" + extraRoundNumber + " extra!)" + "\n" + counter;
             //}
             //else {
-                this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + "\n" + counter;
+            this.GetComponent<Text>().text = "Round " + (theDeck.round + 1) + " of " + (theDeck.totalRounds - 1) + "\n" + counter;
             //}
             //this.GetComponent<Text>().text = "Round " + theDeck.totalRounds + "\n" + counter;
             alreadyValued = true;
@@ -89,7 +89,7 @@ public class AddOrSub : MonoBehaviour {
             //    //this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + " (+" + extraRoundNumber + " extra!)" + "\n" + counter;
             //}
             //else {
-                this.GetComponent<Text>().text = "Round " + theDeck.round + " of " + theDeck.totalRounds + "\n" + counter;
+            this.GetComponent<Text>().text = "Round " + (theDeck.round + 1) + " of " + (theDeck.totalRounds - 1) + "\n" + counter;
             //}
             //this.GetComponent<Text>().text = "Round " + theDeck.totalRounds + "\n" + counter;
             alreadyValued = true;

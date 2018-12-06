@@ -2175,11 +2175,11 @@ MonoBehaviour:
   secondCard:
     suit: 0
     rank: 0
-  round: 1
+  round: 0
   gameData: {fileID: 1134265035}
   goalText: {fileID: 858814763}
   goal: 0
-  totalRounds: 5
+  totalRounds: 6
 --- !u!4 &2051417292
 Transform:
   m_ObjectHideFlags: 0

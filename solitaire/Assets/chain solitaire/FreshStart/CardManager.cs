@@ -28,7 +28,7 @@ public class CardManager : MonoBehaviour {
         goal = (int)Random.Range(3, 21);
         goalText.text = "Goal: " + goal;
         round = 1;
-        totalRounds = 5;
+        totalRounds = 6;
 
         ShuffleDeck();
         
@@ -75,16 +75,16 @@ public class CardManager : MonoBehaviour {
         else {
             Debug.Log("game over");
             if (gameData.counter == goal) {
-                gameData.GetComponent<Text>().text = "Game Over\nBest End!!";
+                gameData.GetComponent<Text>().text = gameData.counter + "\nBest End!!";
             }
             else if (gameData.counter > goal - 3 && gameData.counter < goal + 3) {
-                gameData.GetComponent<Text>().text = "Game Over\nGood End";
+                gameData.GetComponent<Text>().text = gameData.counter + "\nGood End";
             }
             else if ((gameData.counter < goal - 3 && gameData.counter > goal - 5) || (gameData.counter > goal + 3 && gameData.counter < goal + 5)) {
-                gameData.GetComponent<Text>().text = "Game Over\nLukewarm End";
+                gameData.GetComponent<Text>().text = gameData.counter + "\nLukewarm End";
             }
             else {
-                gameData.GetComponent<Text>().text = "Game Over\nDid you even try?";
+                gameData.GetComponent<Text>().text = gameData.counter + "\nDid you even try?";
             }
         }
     }
