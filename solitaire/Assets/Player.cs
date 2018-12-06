@@ -9,7 +9,9 @@ public class Player : MonoBehaviour {
 
     public float moveSpeed = 5;
     public float stepTimer /*= -1f*/;
+
     public bool walking = false;
+    public bool candlePuzClear;
 
     public KeyCode rightKey = KeyCode.D;
     public KeyCode leftKey = KeyCode.A;
@@ -18,6 +20,9 @@ public class Player : MonoBehaviour {
 
     public AudioSource footStepSource;
     public AudioClip stepOnWood;
+
+    public List<LightingScript> candles;
+    public int numCandlesLit = 0;
     
 	// Use this for initialization
 	void Start () {
@@ -25,6 +30,8 @@ public class Player : MonoBehaviour {
         //sr = GetComponent<SpriteRenderer>();
 		rb = GetComponent<Rigidbody2D>();
         stepTimer = 0;
+
+        candlePuzClear = false;
        
 
     }
@@ -32,7 +39,7 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-        Debug.Log(stepTimer);
+        Debug.Log(stepTimer);      
 
 
         if (Input.GetKey(rightKey))
@@ -74,6 +81,48 @@ public class Player : MonoBehaviour {
 
         }
         else { walking = false; }
+
+
+        for (int i = 0; i < candles.Count; i++)
+        {
+            numCandlesLit = 0;
+
+            if (candles[0].candleLit == true)
+            {
+                numCandlesLit++;
+            }
+
+            if (candles[1].candleLit == true)
+            {
+                numCandlesLit++;
+            }
+
+            if (candles[2].candleLit == true)
+            {
+                numCandlesLit++;
+            }
+
+            if (candles[3].candleLit == true)
+            {
+                numCandlesLit++;
+            }
+
+            if (candles[4].candleLit == true)
+            {
+                numCandlesLit++;
+            }
+
+            if (candles[5].candleLit == true)
+            {
+                numCandlesLit++;
+            }
+
+        }
+
+        if (numCandlesLit == 6) {
+            candlePuzClear = true;
+        }
+
     }
 
     public void walkingSound()

@@ -5,28 +5,59 @@ using UnityEngine;
 public class LightingScript : MonoBehaviour {
 
     public float litTimer;
+    public float numOfLitCandles = 0f;
+
     public GameObject flamePrefab;
+
+    public bool candleLit = false;
+
+    public bool changeCounter = false;
 
 	// Use this for initialization
 	void Start () {
+
         litTimer = 0f;
+
         flamePrefab.SetActive(false);
+
+        changeCounter = true;
+        //numOfLitCandles = 0f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-       // litTimer -= Time.deltaTime;
-
         if (litTimer > 0 && litTimer < 5)
         {
             this.flamePrefab.SetActive(true);          
-
         }
         else {
             this.flamePrefab.SetActive(false);
         }
 
+        if (candleLit == true) {
+
+            litTimer -= Time.deltaTime;
+
+            if (changeCounter == true) {
+
+                numOfLitCandles++;
+                changeCounter = false;
+
+            }
+
+        }
+
+        if (candleLit == false) {
+          
+        }
+
+        if (litTimer <= 0) {
+
+            candleLit = false;
+            changeCounter = true;
+
+        }
 
 	}
 
@@ -35,7 +66,7 @@ public class LightingScript : MonoBehaviour {
         if (coll.gameObject.tag == "Player")
         {
             litTimer = 5f;
-            litTimer -= Time.deltaTime;
+            candleLit = true;         
 
         }
     }
