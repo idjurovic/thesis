@@ -7,13 +7,19 @@ using UnityEngine.SceneManagement;
 public class AddOrSub : MonoBehaviour {
 
     public CardManager theDeck;
+    public Text predictText;
+    public bool showPrediction = true;
     public int counter = 0;
     public bool alreadyValued = false;  //did you already add or subtract this card? no bm pls
+    public bool predictUsed = false;
+    public GameObject predictButton;
     //public bool showRoundNumber = false;
     //public int extraRoundNumber = 0;
 
     private void Start() {
         this.GetComponent<Text>().text = "Round " + (theDeck.round + 1) + " of " + (theDeck.totalRounds - 1) + "\n" + counter;
+        predictText.text = "";
+        predictButton.SetActive(true);
     }
 
     public void Add () {
@@ -99,9 +105,22 @@ public class AddOrSub : MonoBehaviour {
 
     public void Draw () {
         theDeck.Draw();
+        if (predictUsed) {
+            showPrediction = false;
+            predictText.text = "";
+            predictButton.SetActive(false);
+        }
     }
 
     public void Replay() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Predict() {
+        if (!predictUsed && showPrediction) {
+            predictText.text = "I'm sensing the next cards will be the\n" + theDeck.deck[0].rank + " of " + theDeck.deck[0].suit + " and\n"
+                + "the " + theDeck.deck[1].rank + " of " + theDeck.deck[1].suit + ".";
+        }
+        predictUsed = true;
     }
 }

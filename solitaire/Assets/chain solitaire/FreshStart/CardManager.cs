@@ -20,7 +20,7 @@ public class CardManager : MonoBehaviour {
 	void Start () {
         for (int i = 0; i < 4; i++) {
             Card.Suit newCardSuit = (Card.Suit)i;
-            for (int j = 0; j < 13; j++) {
+            for (int j = 0; j < 14; j++) {
                 deck.Add(new Card(newCardSuit, j));
             }
         }
