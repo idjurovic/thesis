@@ -17,12 +17,21 @@ public class AddOrSub : MonoBehaviour {
     public GameObject skipButton;
     //public bool showRoundNumber = false;
     //public int extraRoundNumber = 0;
+    public bool trapped = false;
 
     private void Start() {
         this.GetComponent<Text>().text = "Round " + (theDeck.round + 1) + " of " + (theDeck.totalRounds - 1) + "\n" + counter;
         predictText.text = "";
         predictButton.SetActive(true);
-        skipButton.SetActive(true);
+        skipButton.SetActive(false);
+    }
+
+    private void Update() {
+        if (counter == theDeck.goal) {
+            skipButton.SetActive(true);
+            trapped = true;
+            theDeck.goalText.text = "Goal: " + (theDeck.goal - 1) + " - " + (theDeck.goal + 1);
+        }
     }
 
     public void Add () {
@@ -114,7 +123,7 @@ public class AddOrSub : MonoBehaviour {
             predictButton.SetActive(false);
         }
         if (skipUsed) {
-            skipButton.SetActive(false);
+            //skipButton.SetActive(false);
         }
     }
 
@@ -131,11 +140,12 @@ public class AddOrSub : MonoBehaviour {
     }
 
     public void Skip() {
-        if (!skipUsed) {
-            skipUsed = true;
-            alreadyValued = true;
-            theDeck.round--;
-            Draw();
-        }
+        //skip 1 turn code
+        //if (!skipUsed) {
+        //    skipUsed = true;
+        //    alreadyValued = true;
+        //    theDeck.round--;
+        //    Draw();
+        //}
     }
 }

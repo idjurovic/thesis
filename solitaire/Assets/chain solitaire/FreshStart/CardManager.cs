@@ -18,14 +18,23 @@ public class CardManager : MonoBehaviour {
     public int totalRounds = 5;
 	
 	void Start () {
-        for (int i = 0; i < 4; i++) {
+        //for (int i = 0; i < 4; i++) {
+        //    Card.Suit newCardSuit = (Card.Suit)i;
+        //    for (int j = 1; j < 14; j++) {
+        //        deck.Add(new Card(newCardSuit, j));
+        //    }
+        //}
+
+        //only 10 cards of 1 suit
+        for (int i = 0; i < 1; i++) {
             Card.Suit newCardSuit = (Card.Suit)i;
-            for (int j = 0; j < 14; j++) {
+            for (int j = 1; j < 11; j++) {
                 deck.Add(new Card(newCardSuit, j));
             }
         }
 
-        goal = (int)Random.Range(3, 21);
+        //goal = (int)Random.Range(3, 21);
+        goal = (int)Random.Range(3, 16);
         goalText.text = "Goal: " + goal;
         round = 1;
         totalRounds = 6;
@@ -74,8 +83,13 @@ public class CardManager : MonoBehaviour {
         }
         else {
             Debug.Log("game over");
-            if (gameData.counter == goal) {
-                gameData.GetComponent<Text>().text = gameData.counter + "\nBest End!!";
+            if (gameData.counter == goal || gameData.trapped && (gameData.counter >= goal - 1 && gameData.counter <= goal + 1)) {
+                if (gameData.counter == goal) {
+                    gameData.GetComponent<Text>().text = gameData.counter + "\nBest End!!";
+                }
+                else {
+                    gameData.GetComponent<Text>().text = gameData.counter + "\nSecret End (TRAPPED)";
+                }
             }
             else if (gameData.counter > goal - 3 && gameData.counter < goal + 3) {
                 gameData.GetComponent<Text>().text = gameData.counter + "\nGood End";
