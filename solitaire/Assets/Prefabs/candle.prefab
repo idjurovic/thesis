@@ -114,6 +114,7 @@ MonoBehaviour:
   flamePrefab: {fileID: 1595877127675928}
   candleLit: 0
   changeCounter: 0
+  fireSource: {fileID: 0}
 --- !u!198 &198227552090632826
 ParticleSystem:
   m_ObjectHideFlags: 1

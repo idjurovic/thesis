@@ -23,8 +23,8 @@ public class CandleScript : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Player")
         {
-            lightButton.SetActive(true);
-            screamSound();
+            //lightButton.SetActive(true);
+            //screamSound();
             if (Input.GetKey("space")) {
                 SceneManager.LoadScene(1);
             }

@@ -13,8 +13,10 @@ public class LightingScript : MonoBehaviour {
 
     public bool changeCounter = false;
 
-	// Use this for initialization
-	void Start () {
+    public AudioSource fireSource;
+
+    // Use this for initialization
+    void Start() {
 
         litTimer = 0f;
 
@@ -22,14 +24,14 @@ public class LightingScript : MonoBehaviour {
 
         changeCounter = true;
         //numOfLitCandles = 0f;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update() {
 
         if (litTimer > 0 && litTimer < 5)
         {
-            this.flamePrefab.SetActive(true);          
+            this.flamePrefab.SetActive(true);
         }
         else {
             this.flamePrefab.SetActive(false);
@@ -49,7 +51,7 @@ public class LightingScript : MonoBehaviour {
         }
 
         if (candleLit == false) {
-          
+
         }
 
         if (litTimer <= 0) {
@@ -59,16 +61,23 @@ public class LightingScript : MonoBehaviour {
 
         }
 
-	}
+    }
 
     private void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.gameObject.tag == "Player")
         {
             litTimer = 5f;
-            candleLit = true;         
+            candleLit = true;
+            litSound();
 
         }
+    }
+
+    public void litSound(){
+        fireSource.Play();
+        fireSource.pitch = Random.Range(1,4);
+
     }
 
 }

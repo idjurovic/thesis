@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
 
     public bool walking = false;
     public bool candlePuzClear;
+    public bool clearSoundPlayed;
 
     public KeyCode rightKey = KeyCode.D;
     public KeyCode leftKey = KeyCode.A;
@@ -20,9 +21,12 @@ public class Player : MonoBehaviour {
 
     public AudioSource footStepSource;
     public AudioClip stepOnWood;
+    public AudioSource screamSource;
 
     public List<LightingScript> candles;
     public int numCandlesLit = 0;
+
+    public GameObject blueFlames;
     
 	// Use this for initialization
 	void Start () {
@@ -32,7 +36,8 @@ public class Player : MonoBehaviour {
         stepTimer = 0;
 
         candlePuzClear = false;
-       
+        blueFlames.SetActive(false);
+        clearSoundPlayed = false;
 
     }
 	
@@ -123,6 +128,18 @@ public class Player : MonoBehaviour {
             candlePuzClear = true;
         }
 
+        if(candlePuzClear == true)
+        {
+            blueFlames.SetActive(true);
+
+            if (clearSoundPlayed == false)
+            {
+                screamSound();
+                clearSoundPlayed = true;
+            }
+
+        }
+
     }
 
     public void walkingSound()
@@ -134,6 +151,15 @@ public class Player : MonoBehaviour {
             footStepSource.Play();
             footStepSource.pitch = Random.Range(1, 5);
             stepTimer = 0.2f;
+        }
+
+    }
+
+    public void screamSound()
+    {
+        if (!screamSource.isPlaying)
+        {
+            screamSource.Play();
         }
 
     }
