@@ -34,7 +34,7 @@ public class CardManager : MonoBehaviour {
         }
 
         //goal = (int)Random.Range(3, 21);
-        goal = (int)Random.Range(3, 16);
+        goal = 13;
         goalText.text = "Goal: " + goal;
         round = 1;
         totalRounds = 6;

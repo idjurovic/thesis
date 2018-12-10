@@ -18,6 +18,7 @@ public class AddOrSub : MonoBehaviour {
     //public bool showRoundNumber = false;
     //public int extraRoundNumber = 0;
     public bool trapped = false;
+    public int goalRange = 0;
 
 
     private void Start() {
@@ -29,11 +30,11 @@ public class AddOrSub : MonoBehaviour {
     }
 
     private void Update() {
-        if (counter == theDeck.goal) {
-            skipButton.SetActive(true);
-            trapped = true;
-            theDeck.goalText.text = "Goal: " + (theDeck.goal - 1) + " - " + (theDeck.goal + 1);
-        }
+        //if (counter == theDeck.goal) {
+        //    skipButton.SetActive(true);
+        //    trapped = true;
+        //    theDeck.goalText.text = "Goal: " + (theDeck.goal - goalRange) + " - " + (theDeck.goal + goalRange);
+        //}
     }
 
     public void Add () {
@@ -128,6 +129,11 @@ public class AddOrSub : MonoBehaviour {
         if (skipUsed) {
             //skipButton.SetActive(false);
         }
+        if (counter == theDeck.goal) {
+            skipButton.SetActive(true);
+            trapped = true;
+            Trapped();
+        }
     }
 
     public void Replay() {
@@ -152,5 +158,11 @@ public class AddOrSub : MonoBehaviour {
         //}
     }
 
-
+    public void Trapped() {
+        if (trapped) {
+            goalRange++;
+            theDeck.goalText.text = "Goal: " + (theDeck.goal - goalRange) + " - " + (theDeck.goal + goalRange);
+            //trapped = false;
+        }
+    }
 }
