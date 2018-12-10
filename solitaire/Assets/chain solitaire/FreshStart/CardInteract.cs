@@ -11,6 +11,9 @@ public class CardInteract : MonoBehaviour {
     public int methodNumber;    //0 is Add, 1 is Subtract, 2 is AddSecond, 3 is SubtractSecond
     //public CardManager cardManager;
 
+    public AudioSource addSoundSource;
+    public AudioSource subSoundSource;
+
     void Start() {
         isPressed = false;
         startPos = this.transform.position;
@@ -31,15 +34,19 @@ public class CardInteract : MonoBehaviour {
         if (colliding) {
             if (methodNumber == 0) {
                 addOrSub.Add();
+                addSound();
             }
             else if (methodNumber == 2) {
                 addOrSub.AddSecond();
+                addSound();
             }
             else if (methodNumber == 1) {
                 addOrSub.Subtract();
+                subSound();
             }
             else if (methodNumber == 3) {
                 addOrSub.SubtractSecond();
+                subSound();
             }
         }
         isPressed = false;
@@ -65,6 +72,7 @@ public class CardInteract : MonoBehaviour {
         if (collision.tag == "add") {
             if (this.gameObject.tag == "card") {
                 methodNumber = 0;
+                
             }
             else {
                 methodNumber = 2;
@@ -73,6 +81,7 @@ public class CardInteract : MonoBehaviour {
         else if (collision.tag == "subtract") {
             if (this.gameObject.tag == "card") {
                 methodNumber = 1;
+                
             }
             else {
                 methodNumber = 3;
@@ -83,4 +92,17 @@ public class CardInteract : MonoBehaviour {
     private void OnTriggerExit2D(Collider2D collision) {
         colliding = false;
     }
+
+    public void addSound()
+    {
+        addSoundSource.Play();
+
+    }
+
+    public void subSound()
+    {
+        subSoundSource.Play();
+
+    }
+
 }

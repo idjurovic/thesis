@@ -19,11 +19,13 @@ public class AddOrSub : MonoBehaviour {
     //public int extraRoundNumber = 0;
     public bool trapped = false;
 
+
     private void Start() {
         this.GetComponent<Text>().text = "Round " + (theDeck.round + 1) + " of " + (theDeck.totalRounds - 1) + "\n" + counter;
         predictText.text = "";
         predictButton.SetActive(true);
         skipButton.SetActive(false);
+        
     }
 
     private void Update() {
@@ -37,6 +39,7 @@ public class AddOrSub : MonoBehaviour {
     public void Add () {
         if (!alreadyValued) {
             Debug.Log("" + theDeck.myCard.rank + " of " + theDeck.myCard.suit);
+
             counter += theDeck.myCard.rank;
             if (theDeck.myCard.suit.ToString() == "diamonds") {
                 //showRoundNumber = true;
@@ -148,4 +151,6 @@ public class AddOrSub : MonoBehaviour {
         //    Draw();
         //}
     }
+
+
 }
