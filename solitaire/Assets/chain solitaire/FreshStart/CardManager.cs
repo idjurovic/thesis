@@ -83,7 +83,7 @@ public class CardManager : MonoBehaviour {
         }
         else {
             Debug.Log("game over");
-            if (gameData.counter == goal || gameData.trapped && (gameData.counter >= goal - 1 && gameData.counter <= goal + 1)) {
+            if (gameData.counter == goal || gameData.trapped && (gameData.counter >= goal - gameData.goalRange && gameData.counter <= goal + gameData.goalRange)) {
                 if (gameData.counter == goal) {
                     gameData.GetComponent<Text>().text = gameData.counter + "\nBest End!!";
                 }
