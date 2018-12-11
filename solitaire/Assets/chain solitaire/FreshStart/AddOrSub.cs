@@ -137,7 +137,8 @@ public class AddOrSub : MonoBehaviour {
     }
 
     public void Replay() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(0);
     }
 
     public void Predict() {
