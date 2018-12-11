@@ -16,6 +16,7 @@ public class CardManager : MonoBehaviour {
     public Text goalText;   //display the goal
     public int goal;    //number to get
     public int totalRounds = 5;
+    public GameObject replayButton;
 	
 	void Start () {
         //for (int i = 0; i < 4; i++) {
@@ -54,6 +55,8 @@ public class CardManager : MonoBehaviour {
 
         drawnSecondCard = GameObject.Find("Card_Second");
         drawnSecondCard.GetComponent<SpriteRenderer>().sprite = GetCardSprite(secondCard.suit, secondCard.rank);
+
+        replayButton.SetActive(false);
     }
 
 	Sprite GetCardSprite(Card.Suit suit, int rank) {
@@ -100,6 +103,8 @@ public class CardManager : MonoBehaviour {
             else {
                 gameData.GetComponent<Text>().text = gameData.counter + "\nDid you even try?";
             }
+
+            replayButton.SetActive(true);
         }
     }
 

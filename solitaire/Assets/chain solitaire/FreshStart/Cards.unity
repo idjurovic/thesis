@@ -993,6 +993,7 @@ MonoBehaviour:
   predictButton: {fileID: 1212185061}
   skipButton: {fileID: 1411646442}
   trapped: 0
+  goalRange: 0
 --- !u!114 &1134265036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1781,7 +1782,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b90a06e79e1469643b882ea2376a4235, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -2106,7 +2107,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1722475906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1, y: 0.68, z: 0}
+  m_LocalPosition: {x: -2.1, y: 0.68, z: 1}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2444,7 +2445,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1868357563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.08, y: 0.68, z: 0}
+  m_LocalPosition: {x: 2.08, y: 0.68, z: 1}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3037,6 +3038,7 @@ MonoBehaviour:
   goalText: {fileID: 858814763}
   goal: 0
   totalRounds: 6
+  replayButton: {fileID: 1656477387}
 --- !u!4 &2051417292
 Transform:
   m_ObjectHideFlags: 0
@@ -3205,7 +3207,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b90a06e79e1469643b882ea2376a4235, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0

@@ -69,7 +69,7 @@ public class CardInteract : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision) {
         colliding = true;
-        if (collision.tag == "add") {
+        if (collision.tag == "add" && colliding) {
             if (this.gameObject.tag == "card") {
                 methodNumber = 0;
                 
@@ -78,7 +78,7 @@ public class CardInteract : MonoBehaviour {
                 methodNumber = 2;
             }
         }
-        else if (collision.tag == "subtract") {
+        else if (collision.tag == "subtract" && colliding) {
             if (this.gameObject.tag == "card") {
                 methodNumber = 1;
                 
