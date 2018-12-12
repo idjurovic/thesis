@@ -20,12 +20,16 @@ public class AddOrSub : MonoBehaviour {
     public bool trapped = false;
     public int goalRange = 0;
 
+    public AudioSource predictSource;
+
 
     private void Start() {
         this.GetComponent<Text>().text = "Round " + (theDeck.round + 1) + " of " + (theDeck.totalRounds - 1) + "\n" + counter;
         predictText.text = "";
         predictButton.SetActive(true);
         skipButton.SetActive(false);
+
+        predictSource = GameObject.Find("predictSource").GetComponent<AudioSource>();
         
     }
 
@@ -145,6 +149,7 @@ public class AddOrSub : MonoBehaviour {
         if (!predictUsed && showPrediction) {
             predictText.text = "I'm sensing the next cards will be the\n" + theDeck.deck[0].rank + " of " + theDeck.deck[0].suit + " and\n"
                 + "the " + theDeck.deck[1].rank + " of " + theDeck.deck[1].suit + ".";
+            predictionSound();
         }
         predictUsed = true;
     }
@@ -166,4 +171,11 @@ public class AddOrSub : MonoBehaviour {
             //trapped = false;
         }
     }
+
+    public void predictionSound() {
+
+        predictSource.Play();
+
+    }
+
 }
