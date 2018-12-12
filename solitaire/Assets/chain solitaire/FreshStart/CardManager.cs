@@ -17,6 +17,9 @@ public class CardManager : MonoBehaviour {
     public int goal;    //number to get
     public int totalRounds = 5;
     public GameObject replayButton;
+
+    public AudioSource defeatSource;
+    public AudioSource bgSource;
 	
 	void Start () {
         //for (int i = 0; i < 4; i++) {
@@ -25,6 +28,9 @@ public class CardManager : MonoBehaviour {
         //        deck.Add(new Card(newCardSuit, j));
         //    }
         //}
+
+        defeatSource = GameObject.Find("defeatMusic").GetComponent<AudioSource>();
+        bgSource = GameObject.Find("bgMusic").GetComponent<AudioSource>();
 
         //only 10 cards of 1 suit
         for (int i = 0; i < 1; i++) {
@@ -67,6 +73,14 @@ public class CardManager : MonoBehaviour {
         //Pressed();
 	}
 
+    public void defeatTune()
+    {
+
+        defeatSource.Play();
+        bgSource.Stop();
+
+    }
+
     public void Draw() {
         round++;
         if (round < totalRounds && gameData.alreadyValued) {
@@ -102,6 +116,7 @@ public class CardManager : MonoBehaviour {
             }
             else {
                 gameData.GetComponent<Text>().text = gameData.counter + "\nDid you even try?";
+                defeatTune();
             }
 
             replayButton.SetActive(true);
@@ -130,6 +145,7 @@ public class CardManager : MonoBehaviour {
     //    }
     //}
 }
+
 [System.Serializable]
 public class Card {
 
@@ -152,3 +168,4 @@ public class Card {
 
 
 }
+
