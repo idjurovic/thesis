@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+//using UnityEngine.SceneManagement;
 
 public class CardManager : MonoBehaviour {
 
@@ -103,20 +104,25 @@ public class CardManager : MonoBehaviour {
             if (gameData.counter == goal || gameData.trapped && (gameData.counter >= goal - gameData.goalRange && gameData.counter <= goal + gameData.goalRange)) {
                 if (gameData.counter == goal) {
                     gameData.GetComponent<Text>().text = gameData.counter + "\nBest End!!";
+                    gameData.endingNumber = 1;
                 }
                 else {
                     gameData.GetComponent<Text>().text = gameData.counter + "\nSecret End (TRAPPED)";
+                    gameData.endingNumber = 1;  //change to secret ending
                 }
             }
             else if (gameData.counter > goal - 3 && gameData.counter < goal + 3) {
                 gameData.GetComponent<Text>().text = gameData.counter + "\nGood End";
+                gameData.endingNumber = 2;
             }
             else if ((gameData.counter < goal - 3 && gameData.counter > goal - 5) || (gameData.counter > goal + 3 && gameData.counter < goal + 5)) {
                 gameData.GetComponent<Text>().text = gameData.counter + "\nLukewarm End";
+                gameData.endingNumber = 2;
             }
             else {
                 gameData.GetComponent<Text>().text = gameData.counter + "\nDid you even try?";
                 defeatTune();
+                gameData.endingNumber = 3;
             }
 
             replayButton.SetActive(true);

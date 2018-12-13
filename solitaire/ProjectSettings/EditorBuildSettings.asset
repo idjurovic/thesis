@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/chain solitaire/FreshStart/Cards.unity
     guid: 9468ccce3e920c349ba23aaae09dcbb3
+  - enabled: 1
+    path: Assets/chain solitaire/FreshStart/bestEnd.unity
+    guid: 61e6a079e4e20d54aa233035462bea5b
+  - enabled: 1
+    path: Assets/chain solitaire/FreshStart/goodEnd.unity
+    guid: ad8a4b02356659a44bc3e3a26cbb36a2
+  - enabled: 1
+    path: Assets/chain solitaire/FreshStart/badEnd.unity
+    guid: 49b78581287b56c4194af9aa4e0b73cf
   m_configObjects: {}

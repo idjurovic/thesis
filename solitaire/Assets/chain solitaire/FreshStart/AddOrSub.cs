@@ -19,6 +19,7 @@ public class AddOrSub : MonoBehaviour {
     //public int extraRoundNumber = 0;
     public bool trapped = false;
     public int goalRange = 0;
+    public int endingNumber;
 
     public AudioSource predictSource;
 
@@ -28,6 +29,7 @@ public class AddOrSub : MonoBehaviour {
         predictText.text = "";
         predictButton.SetActive(true);
         skipButton.SetActive(false);
+        endingNumber = 0;
 
         predictSource = GameObject.Find("predictSource").GetComponent<AudioSource>();
         
@@ -142,7 +144,20 @@ public class AddOrSub : MonoBehaviour {
 
     public void Replay() {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadScene(0);
+        if (endingNumber == 1) {
+            SceneManager.LoadScene("bestEnd");
+        }
+        else if (endingNumber == 2) {
+            SceneManager.LoadScene("goodEnd");
+        }
+        else if (endingNumber == 3) {
+            SceneManager.LoadScene("badEnd");
+        }
+        else {
+            SceneManager.LoadScene("goodEnd");
+        }
+
+        //SceneManager.LoadScene(0);
     }
 
     public void Predict() {

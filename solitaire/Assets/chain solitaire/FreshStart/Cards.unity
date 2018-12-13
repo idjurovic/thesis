@@ -1118,6 +1118,7 @@ MonoBehaviour:
   skipButton: {fileID: 1411646442}
   trapped: 0
   goalRange: 0
+  endingNumber: 0
   predictSource: {fileID: 0}
 --- !u!114 &1134265036
 MonoBehaviour:
@@ -2229,7 +2230,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -201, y: 481.1}
-  m_SizeDelta: {x: 59.8, y: 30}
+  m_SizeDelta: {x: 65.83, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1656477389
 MonoBehaviour:
@@ -3428,7 +3429,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Replay
+  m_Text: Exorcize
 --- !u!222 &2109981426
 CanvasRenderer:
   m_ObjectHideFlags: 0

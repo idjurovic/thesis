@@ -26,7 +26,7 @@ public class CandleScript : MonoBehaviour {
             //lightButton.SetActive(true);
             //screamSound();
             if (Input.GetKey("space")) {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene("Cards");
             }
 
 
