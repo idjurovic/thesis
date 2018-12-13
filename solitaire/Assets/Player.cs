@@ -10,7 +10,7 @@ public class Player : MonoBehaviour {
     public float moveSpeed = 5;
     public float stepTimer /*= -1f*/;
 
-    public bool walking = false;
+    public bool walking;
     public bool candlePuzClear;
     public bool clearSoundPlayed;
 
@@ -27,6 +27,8 @@ public class Player : MonoBehaviour {
     public int numCandlesLit = 0;
 
     public GameObject blueFlames;
+
+    public Animator anim;
     
 	// Use this for initialization
 	void Start () {
@@ -39,53 +41,82 @@ public class Player : MonoBehaviour {
         blueFlames.SetActive(false);
         clearSoundPlayed = false;
 
+        anim = GetComponent<Animator>();
+
+        walking = false;
+        
+
     }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
 
-        Debug.Log(stepTimer);      
+        Debug.Log(stepTimer);
 
+        anim.SetBool("isWalking", false);
 
         if (Input.GetKey(rightKey))
         {
             walking = true;
             transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-            walkingSound();           
+            walkingSound();
+            walkingAnim();
             // Debug.Log(walking);
             //sr.flipX = false;
+
+            anim.SetBool("isWalking", true);
+
         }
-        else { walking = false; }
+        else 
+        {
+            walking = false;
+
+            //anim.SetBool("isWalking", false);
+        }
 
         if (Input.GetKey(leftKey))
         {
             walking = true;
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
-            walkingSound();          
+            walkingSound();
+            walkingAnim();
             // sr.flipX = true;
+            anim.SetBool("isWalking", true);
 
         }
-        else { walking = false; }
+        else { walking = false;
+            //anim.SetBool("isWalking", false);
+        }
 
 
         if (Input.GetKey(upKey))
         {
             walking = true;
             transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
-            walkingSound();        
+            walkingSound();
+            walkingAnim();
+            anim.SetBool("isWalking", true);
 
         }
-        else { walking = false; }
+        else { walking = false;
+           // anim.SetBool("isWalking", false);
+        }
 
 
         if (Input.GetKey(downKey)) {
 
             walking = true;
             transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
-            walkingSound();         
+            walkingSound();
+            walkingAnim();
+            anim.SetBool("isWalking", true);
 
         }
-        else { walking = false; }
+        else { walking = false;
+
+           //anim.SetBool("isWalking", false);
+
+        }
 
 
         for (int i = 0; i < candles.Count; i++)
@@ -161,6 +192,12 @@ public class Player : MonoBehaviour {
         {
             screamSource.Play();
         }
+
+    }
+
+    public void walkingAnim() {
+
+        anim.SetBool("isWalking", true);
 
     }
 
