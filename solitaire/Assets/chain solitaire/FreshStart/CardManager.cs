@@ -19,6 +19,12 @@ public class CardManager : MonoBehaviour {
     public int totalRounds = 5;
     public GameObject replayButton;
 
+    public Sprite winSprite;
+    public Sprite okSprite;
+    public Sprite badSprite;
+    public Sprite secretSprite;
+    public GameObject playerBoi;    //we're gonna show him and his reactions when you win/lose
+
     public AudioSource defeatSource;
     public AudioSource bgSource;
 	
@@ -64,6 +70,7 @@ public class CardManager : MonoBehaviour {
         drawnSecondCard.GetComponent<SpriteRenderer>().sprite = GetCardSprite(secondCard.suit, secondCard.rank);
 
         replayButton.SetActive(false);
+        playerBoi.SetActive(false);
     }
 
 	Sprite GetCardSprite(Card.Suit suit, int rank) {
@@ -105,23 +112,28 @@ public class CardManager : MonoBehaviour {
                 if (gameData.counter == goal) {
                     gameData.GetComponent<Text>().text = gameData.counter + "\nBest End!!";
                     gameData.endingNumber = 1;
+                    playerBoi.GetComponent<SpriteRenderer>().sprite = winSprite;
                 }
                 else {
                     gameData.GetComponent<Text>().text = gameData.counter + "\nSecret End (TRAPPED)";
                     gameData.endingNumber = 1;  //change to secret ending
+                    playerBoi.GetComponent<SpriteRenderer>().sprite = secretSprite;
                 }
             }
             else if (gameData.counter > (goal - gameData.goalRange) - 3 && gameData.counter < (goal + gameData.goalRange) + 3) {
                 gameData.GetComponent<Text>().text = gameData.counter + "\nGood End";
                 gameData.endingNumber = 2;
+                playerBoi.GetComponent<SpriteRenderer>().sprite = okSprite;
             }
             else {
                 gameData.GetComponent<Text>().text = gameData.counter + "\nDid you even try?";
                 defeatTune();
                 gameData.endingNumber = 3;
+                playerBoi.GetComponent<SpriteRenderer>().sprite = badSprite;
             }
 
             replayButton.SetActive(true);
+            playerBoi.SetActive(true);
         }
     }
 
