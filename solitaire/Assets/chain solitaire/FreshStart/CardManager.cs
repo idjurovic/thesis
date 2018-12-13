@@ -110,23 +110,23 @@ public class CardManager : MonoBehaviour {
             Debug.Log("game over");
             if (gameData.counter == goal || gameData.trapped && (gameData.counter >= goal - gameData.goalRange && gameData.counter <= goal + gameData.goalRange)) {
                 if (gameData.counter == goal) {
-                    gameData.GetComponent<Text>().text = gameData.counter + "\nBest End!!";
+                    gameData.GetComponent<Text>().text = gameData.counter + "\nJust right...";
                     gameData.endingNumber = 1;
                     playerBoi.GetComponent<SpriteRenderer>().sprite = winSprite;
                 }
                 else {
-                    gameData.GetComponent<Text>().text = gameData.counter + "\nSecret End (TRAPPED)";
+                    gameData.GetComponent<Text>().text = gameData.counter + "\nGotcha...";
                     gameData.endingNumber = 1;  //change to secret ending
                     playerBoi.GetComponent<SpriteRenderer>().sprite = secretSprite;
                 }
             }
             else if (gameData.counter > (goal - gameData.goalRange) - 3 && gameData.counter < (goal + gameData.goalRange) + 3) {
-                gameData.GetComponent<Text>().text = gameData.counter + "\nGood End";
+                gameData.GetComponent<Text>().text = gameData.counter + "\nThat'll do...";
                 gameData.endingNumber = 2;
                 playerBoi.GetComponent<SpriteRenderer>().sprite = okSprite;
             }
             else {
-                gameData.GetComponent<Text>().text = gameData.counter + "\nDid you even try?";
+                gameData.GetComponent<Text>().text = gameData.counter + "\nNot good enough...";
                 defeatTune();
                 gameData.endingNumber = 3;
                 playerBoi.GetComponent<SpriteRenderer>().sprite = badSprite;

@@ -9,7 +9,7 @@ public class Loader : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        coroutine = Wait(3f);
+        coroutine = Wait(5f);
         StartCoroutine(coroutine);
     }
 
