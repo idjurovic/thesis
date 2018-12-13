@@ -21,7 +21,7 @@ public class DoorScript : MonoBehaviour {
             if (colliding == true)
             {
                 if (Input.GetKey(KeyCode.Space)) {
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene(2);
 
                 }
 
