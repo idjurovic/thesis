@@ -92,7 +92,9 @@ public class CardInteract : MonoBehaviour {
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
-        //colliding = false;
+        if (collision.tag == "add" || collision.tag == "subtract") {
+            colliding = false;
+        }
     }
 
     public void addSound()
