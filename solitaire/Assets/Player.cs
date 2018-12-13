@@ -33,7 +33,7 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        //sr = GetComponent<SpriteRenderer>();
+        sr = GetComponent<SpriteRenderer>();
 		rb = GetComponent<Rigidbody2D>();
         stepTimer = 0;
 
@@ -54,17 +54,21 @@ public class Player : MonoBehaviour {
         Debug.Log(stepTimer);
 
         anim.SetBool("isWalking", false);
+        anim.SetBool("isRunning", false);
 
         if (Input.GetKey(rightKey))
         {
             walking = true;
             transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
             walkingSound();
-            walkingAnim();
             // Debug.Log(walking);
-            //sr.flipX = false;
 
-            anim.SetBool("isWalking", true);
+            sr.flipX = false;
+            sideRun();
+
+            //anim.SetBool("isRunning", true);
+
+            anim.SetBool("isWalking", false);
 
         }
         else 
@@ -79,9 +83,11 @@ public class Player : MonoBehaviour {
             walking = true;
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
             walkingSound();
-            walkingAnim();
-            // sr.flipX = true;
-            anim.SetBool("isWalking", true);
+
+            sr.flipX = true;
+            sideRun();
+
+            anim.SetBool("isWalking", false);
 
         }
         else { walking = false;
@@ -94,8 +100,8 @@ public class Player : MonoBehaviour {
             walking = true;
             transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
             walkingSound();
+
             walkingAnim();
-            anim.SetBool("isWalking", true);
 
         }
         else { walking = false;
@@ -109,7 +115,7 @@ public class Player : MonoBehaviour {
             transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
             walkingSound();
             walkingAnim();
-            anim.SetBool("isWalking", true);
+           
 
         }
         else { walking = false;
@@ -198,6 +204,14 @@ public class Player : MonoBehaviour {
     public void walkingAnim() {
 
         anim.SetBool("isWalking", true);
+        anim.SetBool("isRunning", false);
+
+    }
+
+    public void sideRun() {
+        Debug.Log("running");
+        anim.SetBool("isRunning", true);
+        anim.SetBool("isWalking", false);
 
     }
 
