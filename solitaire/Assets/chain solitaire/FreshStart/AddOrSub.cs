@@ -163,8 +163,18 @@ public class AddOrSub : MonoBehaviour {
 
     public void Predict() {
         if (!predictUsed && showPrediction) {
-            predictText.text = "I'm sensing the next cards will be the\n" + theDeck.deck[0].rank + " of " + theDeck.deck[0].suit + " and\n"
-                + "the " + theDeck.deck[1].rank + " of " + theDeck.deck[1].suit + ".";
+            if (theDeck.deck[0].rank == 1 || theDeck.deck[1].rank == 1) {
+                string aceRank = "Ace";
+                if (theDeck.deck[0].rank == 1) {
+                    predictText.text = "I'm sensing the next cards will be\nthe " + aceRank + " and the " + theDeck.deck[1].rank + ".";
+                }
+                else {
+                    predictText.text = "I'm sensing the next cards will be\nthe " + theDeck.deck[0].rank + " and the " + aceRank + ".";
+                }
+            }
+            else {
+                predictText.text = "I'm sensing the next cards will be\nthe " + theDeck.deck[0].rank + " and the " + theDeck.deck[1].rank + ".";
+            }
             predictionSound();
         }
         predictUsed = true;
