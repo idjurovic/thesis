@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class start : MonoBehaviour {
 
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetButtonDown("Fire1")) {
+    // Update is called once per frame
+    void Update() {
+        if (Input.anyKey) {
             SceneManager.LoadScene("SampleScene");
         }
 	}
