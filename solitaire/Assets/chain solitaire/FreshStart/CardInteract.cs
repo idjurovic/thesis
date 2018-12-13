@@ -34,6 +34,7 @@ public class CardInteract : MonoBehaviour {
         if (colliding) {
             if (methodNumber == 0) {
                 addOrSub.Add();
+                colliding = false;
                 addSound();
             }
             else if (methodNumber == 2) {
@@ -42,6 +43,7 @@ public class CardInteract : MonoBehaviour {
             }
             else if (methodNumber == 1) {
                 addOrSub.Subtract();
+                colliding = false;
                 subSound();
             }
             else if (methodNumber == 3) {
@@ -90,7 +92,7 @@ public class CardInteract : MonoBehaviour {
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
-        colliding = false;
+        //colliding = false;
     }
 
     public void addSound()
