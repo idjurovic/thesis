@@ -156,8 +156,6 @@ public class AddOrSub : MonoBehaviour {
         else {
             SceneManager.LoadScene("goodEnd");
         }
-
-        //SceneManager.LoadScene(0);
     }
 
     public void Predict() {

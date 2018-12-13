@@ -15,6 +15,6 @@ public class Loader : MonoBehaviour {
 
     private IEnumerator Wait(float waitTime) {
         yield return new WaitForSeconds(waitTime);
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("title");
     }
 }
