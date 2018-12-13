@@ -101,6 +101,7 @@ public class Player : MonoBehaviour {
             transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
             walkingSound();
 
+            sr.flipX = false;
             walkingAnim();
 
         }
@@ -115,7 +116,7 @@ public class Player : MonoBehaviour {
             transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
             walkingSound();
             walkingAnim();
-           
+            sr.flipX = false;
 
         }
         else { walking = false;
