@@ -54,6 +54,9 @@ TagManager:
   - name: MG
     uniqueID: 3168004007
     locked: 0
+  - name: candles
+    uniqueID: 3381535619
+    locked: 0
   - name: Player
     uniqueID: 2923349337
     locked: 0
