@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/chain solitaire/FreshStart/badEnd.unity
     guid: 49b78581287b56c4194af9aa4e0b73cf
+  - enabled: 1
+    path: Assets/chain solitaire/FreshStart/secretEnd.unity
+    guid: c127519608890f042a7b662c53567762
   m_configObjects: {}
