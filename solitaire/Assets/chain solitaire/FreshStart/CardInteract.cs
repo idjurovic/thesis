@@ -39,6 +39,7 @@ public class CardInteract : MonoBehaviour {
             }
             else if (methodNumber == 2) {
                 addOrSub.AddSecond();
+                colliding = false;
                 addSound();
             }
             else if (methodNumber == 1) {
@@ -48,6 +49,7 @@ public class CardInteract : MonoBehaviour {
             }
             else if (methodNumber == 3) {
                 addOrSub.SubtractSecond();
+                colliding = false;
                 subSound();
             }
         }
