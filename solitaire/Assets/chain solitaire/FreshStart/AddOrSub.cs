@@ -153,6 +153,9 @@ public class AddOrSub : MonoBehaviour {
         else if (endingNumber == 3) {
             SceneManager.LoadScene("badEnd");
         }
+        else if (endingNumber == 4) {
+            SceneManager.LoadScene("secretEnd");
+        }
         else {
             SceneManager.LoadScene("goodEnd");
         }

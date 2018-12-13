@@ -116,7 +116,7 @@ public class CardManager : MonoBehaviour {
                 }
                 else {
                     gameData.GetComponent<Text>().text = gameData.counter + "\nGotcha...";
-                    gameData.endingNumber = 1;  //change to secret ending
+                    gameData.endingNumber = 4;  //change to secret ending
                     playerBoi.GetComponent<SpriteRenderer>().sprite = secretSprite;
                 }
             }
