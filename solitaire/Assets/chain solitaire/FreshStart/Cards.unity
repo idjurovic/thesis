@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: b90a06e79e1469643b882ea2376a4235, type: 3}
-  m_Color: {r: 1, g: 0.9878479, b: 0, a: 1}
+  m_Color: {r: 0.5696187, g: 0, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -661,7 +661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: b90a06e79e1469643b882ea2376a4235, type: 3}
-  m_Color: {r: 1, g: 0.978935, b: 0.7122642, a: 1}
+  m_Color: {r: 0.80468154, g: 0.493948, b: 0.9433962, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1240,7 +1240,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.754717, g: 0.20291919, b: 0.2301966, a: 1}
+    m_NormalColor: {r: 0.9811321, g: 0.1064436, b: 0.1064436, a: 1}
     m_HighlightedColor: {r: 0.6415094, g: 0.021181926, b: 0.16004239, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1292,7 +1292,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d1d605c64b4e07143b0f0e139e79db3e, type: 3}
+  m_Sprite: {fileID: 21300012, guid: 6752042de415ae04788ca4f4ebaaaaf7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1752,10 +1752,10 @@ RectTransform:
   m_Father: {fileID: 1486698668}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -405.2, y: 98.7}
-  m_SizeDelta: {x: 72.74, y: 39.2}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -5.200012, y: -151.3}
+  m_SizeDelta: {x: -727.26, y: -460.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1656477389
 MonoBehaviour:
@@ -2302,7 +2302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: b90a06e79e1469643b882ea2376a4235, type: 3}
-  m_Color: {r: 0.8201005, g: 0.7137255, b: 1, a: 1}
+  m_Color: {r: 0.8039216, g: 0.49411765, b: 0.94509804, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
