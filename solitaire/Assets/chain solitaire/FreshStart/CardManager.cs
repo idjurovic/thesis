@@ -111,12 +111,8 @@ public class CardManager : MonoBehaviour {
                     gameData.endingNumber = 1;  //change to secret ending
                 }
             }
-            else if (gameData.counter > goal - 3 && gameData.counter < goal + 3) {
+            else if (gameData.counter > (goal - gameData.goalRange) - 3 && gameData.counter < (goal + gameData.goalRange) + 3) {
                 gameData.GetComponent<Text>().text = gameData.counter + "\nGood End";
-                gameData.endingNumber = 2;
-            }
-            else if ((gameData.counter < goal - 3 && gameData.counter > goal - 5) || (gameData.counter > goal + 3 && gameData.counter < goal + 5)) {
-                gameData.GetComponent<Text>().text = gameData.counter + "\nLukewarm End";
                 gameData.endingNumber = 2;
             }
             else {
