@@ -27,6 +27,8 @@ public class CardManager : MonoBehaviour {
 
     public AudioSource defeatSource;
     public AudioSource bgSource;
+    public AudioSource[] latin;
+    private bool playOnce = false;
 	
 	void Start () {
         //for (int i = 0; i < 4; i++) {
@@ -89,6 +91,13 @@ public class CardManager : MonoBehaviour {
 
     }
 
+    public void latinTune() {
+        if (!latin[(round-2)].isPlaying) {
+            latin[(round - 2)].Play();
+            playOnce = false;
+        }
+    }
+
     public void Draw() {
         round++;
         if (round < totalRounds && gameData.alreadyValued) {
@@ -102,6 +111,8 @@ public class CardManager : MonoBehaviour {
             drawnSecondCard.GetComponent<SpriteRenderer>().sprite = GetCardSprite(secondCard.suit, secondCard.rank);
 
             gameData.alreadyValued = false;
+            playOnce = true;
+            latinTune();
         }
         else if (round < totalRounds && !gameData.alreadyValued) {
             //just don't end the game ok
